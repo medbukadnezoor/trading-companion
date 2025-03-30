@@ -12,10 +12,10 @@ app = FastAPI(
     version="0.1.0",
 )
 
-# Set up CORS - updated for Vercel deployment
+# Set up CORS - updated for Vercel deployment with correct frontend URL
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000", "https://trading-companion-frontend.vercel.app"],
+    allow_origins=["http://localhost:3000", "https://trading-companion.vercel.app"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
