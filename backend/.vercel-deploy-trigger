@@ -1,0 +1,9 @@
+# This file exists to trigger a new Vercel deployment
+# Timestamp: 2023-03-30T12:45:00Z
+# 
+# The changes made in the previous commits need to be deployed:
+# 1. Updated vercel.json with CORS headers
+# 2. Updated main.py with correct frontend URL
+# 3. Added cors_test.py endpoint for testing
+#
+# Please deploy these changes!
