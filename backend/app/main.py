@@ -6,6 +6,9 @@ from fastapi.middleware.cors import CORSMiddleware
 # from app.api.api import api_router
 # from app.db.session import create_db_and_tables
 
+# Import CORS test router
+from app.cors_test import cors_test_router
+
 app = FastAPI(
     title="Trading Companion API",
     description="API for the Trading Companion application",
@@ -23,6 +26,9 @@ app.add_middleware(
 
 # Include API router when available
 # app.include_router(api_router, prefix="/api")
+
+# Include CORS test router
+app.include_router(cors_test_router)
 
 @app.on_event("startup")
 async def startup_event():
